@@ -17,8 +17,8 @@ function romanToDecimal(roman) {
             number += previousValue
             
         }else if(previousValue < nextValue){
-            number += (nextValue - previousValue) 
-            i++;
+            number += (-previousValue) ;
+            
         }else{
             number += previousValue;
         }
